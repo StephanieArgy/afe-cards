@@ -1,6 +1,7 @@
 .card {
-  background-color: #abc;
-  border: 1px solid black;
+  background-color: #fafafa;
+  border: 1px solid transparent;
+  border-radius: 2%;
   height: 10rem;
   margin: 1rem 1rem 1rem 0;
   padding: 5px;
@@ -15,12 +16,29 @@
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .card:hover {
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3), 0 0px 12px rgba(0, 0, 0, 0.22); }
+
+img {
+  margin: auto;
+  max-width: 100%;
+  overflow: visible; }
+
+.card > h3 {
+  color: white;
+  position: relative;
+  top: -45px;
+  text-align: center;
+  margin-bottom: -45px; }
+
 @media only screen and (min-width: 480px) {
   header h1 {
     margin: 0.5rem 0.5rem 0.5rem 0; }
   nav {
     width: 100%; }
     nav a {
-      width: 16.6666666667%;
+      width: 16.66667%;
       padding: 0.5rem;
       margin: 0 1rem 0 0; } }

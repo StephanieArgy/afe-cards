@@ -1,8 +1,11 @@
 @import "components/variables";
+@import "components/shadows";
+
 
 .card {
   background-color: $card-background-color;
   border: $card-border;
+    border-radius: $card-border-radius;
   height: $card-height;
   margin: $card-margin;
   padding: $card-padding;
@@ -21,6 +24,27 @@
    ========================================================================== */
 
 // TODO - This is the break point from HTML 5 boilerplate. How can we turn this into a variable and also make sure that it tracks what's in main.css?
+
+.card {
+    @include drop-shadow(1);
+    &:hover {
+    @include drop-shadow(5);
+    }
+}
+
+img {
+    margin: auto;
+    max-width: 100%;
+    overflow: visible;
+}
+
+.card>h3 {
+    color: $card-banner-h3;
+    position: relative;
+    top: -45px;
+    text-align: center;
+    margin-bottom: -45px;
+}
 
 @media only screen and (min-width: 480px) {
 
